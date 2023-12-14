@@ -2,17 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
+<div class="container py-5" id="home">
     <!--Front Page-->
-    <div class="row py-5">
+    <div class="row flex-column-reverse flex-lg-row">
         <!--Who I am-->
-        <div class="col-6 pt-5">
+        <div class="col-sm-6">
             <h1 class="fw-bold title">Hello, I am <br />Thom Y <br /> Web Developer</h1>
             <p>C#, ASP.NET Core, HTML, CSS, Javascript</p>
-            <a class="btn btn-primary align-middle py-4">Contact Me -></a>
+            <a class="btn btn-primary align-middle py-2">Contact Me -></a>
         </div>
         <!--My picture-->
-        <div class="col-6">
+        <div class="col-sm-6">
             <div>
                 <img src="../images/TSquare.jpg" class="myImg"/>
             </div>
@@ -22,49 +22,51 @@
 
 <!--About Me-->
 <div class="bg-white">
-    <div class="d-flex">
-        <!--My picture-->
-        <div class="col-6">
-            <div>
-                <img src="../images/Thommy.jpg" style="width:100%" />
+    <div class="px-5">
+        <div class="row">
+            <!--My picture-->
+            <div class="col-sm-6">
+                <div>
+                    <img src="../images/Thommy.jpg" style="width:100%;" />
+                </div>
             </div>
-        </div>
-        <!--Who I am-->
-        <div class="col-6 container" style="padding-right:50px">
-            <div class="pt-5">
-                <h1 class="fw-bold">ASP.NET Web Developer</h1>
-                <p>
-                    Hello there, my name is Thom Y. I am a web developer and I&quot;m very passionate and dedicated to my work.
-                    I enjoy taking on the challenges of building a web application and is
-                    currently looking for ASP.NET developer roles. If you like what you see, please feel free to contact me so that we can set up
-                    a time to have a meeting together.
-                </p>
+            <!--Who I am-->
+            <div class="col-sm-6">
+                <div class="pt-5">
+                    <h1 class="fw-bold">ASP.NET Web Developer</h1>
+                    <p style="font-family:'Comic Sans MS'">
+                        Hello there, my name is Thom Y. I am a web developer and I&quot;m very passionate and dedicated to my work.
+                        I enjoy taking on the challenges of building a web application and is
+                        currently looking for ASP.NET developer roles. If you like what you see, please feel free to contact me so that we can set up
+                        a time to have a meeting together.
+                    </p>
 
-                <!--Contact me section-->
-                <div class="row pb-3">
-                    <form method="post">
-                        <div class="card">
-                            <div class="card-header bg-primary">
-                                <h3 class="text-white">Contact Me</h3>
+                    <!--Contact me section-->
+                    <div class="row pb-3">
+                        <form method="post">
+                            <div class="card">
+                                <div class="card-header bg-primary">
+                                    <h3 class="text-white">Contact Me</h3>
+                                </div>
+                                <div class="card-body">
+                                    <!--Name-->
+                                    <div class="form-floating pb-3">
+                                        <input class="form-control" />
+                                        <label class="form-label text-muted ms-1">Name</label>
+                                    </div>
+                                    <div class="form-floating pb-3">
+                                        <input class="form-control" />
+                                        <label class="form-label text-muted ms-1">Email</label>
+                                    </div>
+                                    <div class="form-floating pb-3">
+                                        <textarea type="text" class="form-control" style="height:150px"></textarea>
+                                        <label class="form-label text-muted ms-1">Message</label>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <!--Name-->
-                                <div class="form-floating pb-3">
-                                    <input class="form-control" />
-                                    <label class="form-label text-muted ms-1">Name</label>
-                                </div>
-                                <div class="form-floating pb-3">
-                                    <input class="form-control" />
-                                    <label class="form-label text-muted ms-1">Email</label>
-                                </div>
-                                <div class="form-floating pb-3">
-                                    <textarea type="text" class="form-control" style="height:150px"></textarea>
-                                    <label class="form-label text-muted ms-1">Message</label>
-                                </div>
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@
 <!--Skills-->
 <div class="container py-5">
     <div class="row">
-        <h1 class="fw-bold text-center text-decoration-underline">My Skills & Tools</h1>
+        <h1 class="fw-bold text-center regTitle text-decoration-underline">My Skills & Tools</h1>
         
         <!--Icons of the skills-->
         <div class="d-flex justify-content-around pt-5">
@@ -83,7 +85,79 @@
             <img src="../images/skills/c-sharp.png" class="skillLogo"/>
             <img src="../images/skills/javascript.png" class="skillLogo"/>
             <img src="../images/skills/NET_Core_Logo.png" class="skillLogo"/>
+            <img src="../images/skills/microsoft_azure.png" class="skillLogo" />
         </div>
     </div>
 </div>
-                                
+
+<!--Certifications-->
+<div class="container bg-white p-5" id="cert">
+    <div class="row">
+        <div class="col-sm-6 pb-5">
+            <h1 class="fw-bold regTitle" style="font-size:50px">My Certifications</h1>
+            <p style="font-family:'Comic Sans MS'" class="pb-2">No matter how difficult a task is, I will never let that stop me from trying to complete it.
+                <br /><br /> To the right is all the certifications I&quot;ve gotten so far. Moreover, I plan to continue learning and getting more certifcations. 
+            </p>
+
+            <!--Resume Download-->
+            <a href="files/Thom Y Resume.pdf" download class="btn btn-primary" style="width:120px;border-radius:20px;">Resume <i class="bi bi-arrow-down"></i></a>
+        </div>
+
+        <!--Certifications Image-->
+        <div class="col-sm-6">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="~/images/certs/az-204.png" class="d-block m-auto" style="width:100%" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="~/images/certs/az-900.png" class="d-block m-auto" style="width:100%" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/certs/ITIL.png" class="d-block m-auto" style="width:100%" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                        
+<!--Project Showcase-->
+<div class="container py-5" id="pshow">
+    <h1 class="fw-bold regTitle text-center" >Project Showcase</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="project pt-5">
+                <img src="../images/certs/az-204.png" class="webImg" style="width:100%;" />
+                <!--Text under image-->
+                <div class="imgText">
+                    <h5 class="fw-bolder">Website</h5>
+                    <h4 class="fw-bold">CarSales - Personal Project</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="project pt-5">
+                <img src="../images/certs/az-204.png" class="webImg" style="width:100%;" />
+                <!--Text under image-->
+                <div class="imgText">
+                    <h5 class="fw-bolder">Website</h5>
+                    <h4 class="fw-bold">CarSales - Personal Project</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

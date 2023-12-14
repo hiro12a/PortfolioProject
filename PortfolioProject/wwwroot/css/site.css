@@ -2,10 +2,21 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+@media (max-width: 768px) {
+    html{
+        text-align: center;
+    }
+    .title{
+        font-size: 30px !important;
+        padding: 20px !important;
+        text-align: center;
+    }
+    .myImg{
+        width: 50% !important;
+    }
+    .project{
+        text-align: left;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -25,12 +36,31 @@ body {
 .title{
     font-family: Verdana;
     font-size: 50px;
-    padding-top: 50px;
+    padding-top: 120px;
+}
+.regTitle{
+    font-family: Verdana;
+    font-size: 50px;
 }
 .myImg{
     border-radius: 50%;
     width: 100%;
     mix-blend-mode: darken;
+}
+.project {
+    position: relative;
+    margin: 0 auto; /* Center it */
+}
+.webImg{
+    filter: brightness(80%);
+}
+.imgText {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 110%);
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
 }
 .skillLogo{
     width:5%;
