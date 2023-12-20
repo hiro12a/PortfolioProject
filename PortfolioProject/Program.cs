@@ -1,7 +1,19 @@
+using DataAccess.Repository;
+using DataAccess.Repository.IRepository;
+using Microsoft.EntityFrameworkCore;
+using PortfolioProject.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Connect to Database
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections")));
+
+// Reference IUnitofWork
+builder.Services.AddScoped<IUnitofwork, UnitofWork>();
 
 var app = builder.Build();
 

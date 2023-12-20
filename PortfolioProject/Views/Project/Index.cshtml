@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Projects>
+
+<div class="container py-5">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col d-flex py-3">
+                    <h1 class="">Projects</h1>
+                    <a class="btn btn-primary ms-auto align-items-center d-flex fs-5" asp-controller="Project" asp-action="Create">Create Content<i class="bi bi-plus-circle ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Shows data-->
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Pictures</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td>@obj.Name</td>
+                            <td>@obj.Description</td>
+                            
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
