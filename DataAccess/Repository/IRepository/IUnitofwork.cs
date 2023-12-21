@@ -9,6 +9,8 @@ namespace DataAccess.Repository.IRepository
     public interface IUnitofwork
     {
         ISkillRepository Skill { get; }
+        IProjectRepository Project { get; }
+
         void Save(); // Saves here instead of directly into the database
     }
 }

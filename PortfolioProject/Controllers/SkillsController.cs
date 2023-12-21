@@ -52,14 +52,6 @@ namespace PortfolioProject.Controllers
         [HttpPost]
         public IActionResult Upsert(Skills skills)
         {
-            if(skills.Id == 0)
-            {
-                _unitofwork.Skill.Add(skills);
-            }
-            else
-            {
-                _unitofwork.Skill.Update(skills);
-            }
 
             if (skills.Pictures != null)
             {
@@ -78,7 +70,6 @@ namespace PortfolioProject.Controllers
                         System.IO.File.Delete(oldImagePath);
                     }
                 }
-
                 // Uploads the image
                 using (var filestream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create))
                 {
@@ -88,12 +79,7 @@ namespace PortfolioProject.Controllers
                 skills.ImageUrl = @"\images\skillCerts\" + fileName;
 
             }
-            else
-            {
-                // Default image if theres no image
-                skills.ImageUrl = "https://placeholder.co/400x400";
-            }
-
+            _unitofwork.Skill.Update(skills);
             _unitofwork.Save();
             // Allows us to refresh the page with its field populated
             return RedirectToAction(nameof(Index));
@@ -118,7 +104,7 @@ namespace PortfolioProject.Controllers
         {
             Skills? skillToDelete = _unitofwork.Skill.Get(u => u.Id == obj.Id);
 
-            if(skillToDelete is not null)
+            if(skillToDelete != null)
             {
                 // Check for image
                 if (!string.IsNullOrEmpty(skillToDelete.ImageUrl))

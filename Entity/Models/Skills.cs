@@ -12,6 +12,7 @@ namespace PortfolioProject.Models
         public int Id { get; set; }
         [Required]
         public string? name { get; set; }
+        [Required]
         public string? type { get; set; } // Select between certification or skill
 
         [NotMapped]

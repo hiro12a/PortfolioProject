@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioProject", "PortfolioProject\PortfolioProject.csproj", "{3B7BD822-951C-48E2-AA8C-83B8751F1A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{54FAAB11-8E01-481B-9116-A7F19B48E2B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{54FAAB11-8E01-481B-9116-A7F19B48E2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{8D3D7850-B9CA-42F8-8191-1D4444B77422}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{8D3D7850-B9CA-42F8-8191-1D4444B77422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{D5DB7FD5-7A32-4EFB-93CC-18CA4D70B918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.csproj", "{D5DB7FD5-7A32-4EFB-93CC-18CA4D70B918}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

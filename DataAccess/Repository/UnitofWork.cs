@@ -12,11 +12,13 @@ namespace DataAccess.Repository
     {
         private ApplicationDbContext _db;
         public ISkillRepository Skill { get; private set; }
+        public IProjectRepository Project { get; private set; }
 
         public UnitofWork(ApplicationDbContext db)
         {
             _db = db;
             Skill = new SkillRepository(_db);  
+            Project = new ProjectRepository(_db);
         }
 
         public void Save()

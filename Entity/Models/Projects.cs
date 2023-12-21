@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PortfolioProject.Models
@@ -10,6 +11,11 @@ namespace PortfolioProject.Models
         [Required]
         public string? Name { get; set; }
         [Required]
-        public string? Description { get; set; } 
+        public string? Description { get; set; }
+
+        // Images
+        [NotMapped]
+        public IFormFile? Image { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }

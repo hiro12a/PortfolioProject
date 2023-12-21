@@ -1,6 +1,9 @@
-﻿@{
+﻿@model HomeVM
+
+@{
     ViewData["Title"] = "Home Page";
 }
+
 
 <div class="container py-5" id="home">
     <!--Front Page-->
@@ -80,12 +83,13 @@
         
         <!--Icons of the skills-->
         <div class="d-flex justify-content-around pt-5">
-            <img src="../images/skills/boostrap.png" class="skillLogo"/>
-            <img src="../images/skills/html5.png" class="skillLogo" />
-            <img src="../images/skills/c-sharp.png" class="skillLogo"/>
-            <img src="../images/skills/javascript.png" class="skillLogo"/>
-            <img src="../images/skills/NET_Core_Logo.png" class="skillLogo"/>
-            <img src="../images/skills/microsoft_azure.png" class="skillLogo" />
+            @foreach (var obj in Model.Skill)
+            {
+                @if(obj.type == "Skill")
+                {
+                    <img src="@obj.ImageUrl" class="skillLogo" />
+                }
+            }
         </div>
     </div>
 </div>
@@ -139,25 +143,18 @@
 <div class="container py-5" id="pshow">
     <h1 class="fw-bold regTitle text-center" >Project Showcase</h1>
     <div class="row">
-        <div class="col-sm-6">
-            <div class="project pt-5">
-                <img src="../images/certs/az-204.png" class="webImg" style="width:100%;" />
-                <!--Text under image-->
-                <div class="imgText">
-                    <h5 class="fw-bolder">Website</h5>
-                    <h4 class="fw-bold">CarSales - Personal Project</h4>
+        @foreach (var obj in Model.Project)
+        {
+            <div class="col-sm-6">
+                <div class="project pt-5">
+                    <img src="@obj.ImageUrl" class="webImg" style="width:100%;" />
+                    <!--Text under image-->
+                    <div class="imgText">
+                        <h5 class="fw-bolder">@obj.Name</h5>
+                        <h4 class="fw-bold">@obj.Description</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="project pt-5">
-                <img src="../images/certs/az-204.png" class="webImg" style="width:100%;" />
-                <!--Text under image-->
-                <div class="imgText">
-                    <h5 class="fw-bolder">Website</h5>
-                    <h4 class="fw-bold">CarSales - Personal Project</h4>
-                </div>
-            </div>
-        </div>
+        }
     </div>
 </div>
