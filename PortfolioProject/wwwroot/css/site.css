@@ -65,3 +65,14 @@ body {
 .skillLogo{
     width:5%;
 }
+.linkImg{
+    filter: brightness(20%);
+}
+
+
+/*Projects Page*/
+.modalCenter{
+    top: 40% !important;
+    transform: translateY(-50%) !important;
+    width: 40%;
+}

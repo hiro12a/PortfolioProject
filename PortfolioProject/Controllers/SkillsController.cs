@@ -58,7 +58,7 @@ namespace PortfolioProject.Controllers
                 // Rename the uploaded image to a random one
                 string fileName = Guid.NewGuid().ToString() + Path.GetExtension(skills.Pictures.FileName);
                 // Get the image path on where to upload the image
-                string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\skillCerts");
+                string filepPath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\skillCerts");
 
                 // Check if there is already an iamge
                 if (!string.IsNullOrEmpty(skills.ImageUrl))
@@ -71,7 +71,7 @@ namespace PortfolioProject.Controllers
                     }
                 }
                 // Uploads the image
-                using (var filestream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create))
+                using (var filestream = new FileStream(Path.Combine(filepPath, fileName), FileMode.Create))
                 {
                     skills.Pictures.CopyTo(filestream);
                 }
@@ -85,21 +85,6 @@ namespace PortfolioProject.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Delete(int? id)
-        {
-            List<string> types = new List<string>()
-            {
-                "Skill",
-                "Certification"
-            };
-
-            ViewBag.Types = new SelectList(types);
-
-            Skills skills = _unitofwork.Skill.Get(u => u.Id == id);
-            return View(skills);
-        }
-
-        [HttpPost]
         public IActionResult Delete(Skills obj)
         {
             Skills? skillToDelete = _unitofwork.Skill.Get(u => u.Id == obj.Id);

@@ -39,15 +39,6 @@ namespace PortfolioProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (projects.Id == 0)
-                {
-                    _unitofwork.Project.Add(projects);
-                }
-                else
-                {
-                    _unitofwork.Project.Update(projects);
-                }
-
                 // Make sure the user has uploaded an image
                 if(projects.Image != null)
                 {
@@ -75,9 +66,10 @@ namespace PortfolioProject.Controllers
                     }
 
                     // Declare the image url
-                    projects.ImageUrl = @"images\projects\" + fileName;
+                    projects.ImageUrl = @"\images\projects\" + fileName;
                 }
 
+                _unitofwork.Project.Update(projects);
                 _unitofwork.Save();
             }
 
