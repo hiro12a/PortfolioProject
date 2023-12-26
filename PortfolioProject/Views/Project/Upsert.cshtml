@@ -26,6 +26,18 @@
                             <label asp-for="Description">Name</label>
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
+                        <!--Summary-->
+                        <div class="form-floating pb-3">
+                            <textarea asp-for="Summary" class="form-control" style="height:100px;"></textarea>
+                            <label asp-for="Summary">Summary</label>
+                            <span asp-validation-for="Summary" class="text-danger"></span>
+                        </div>
+                        <!--Technologies-->
+                        <div class="form-floating pb-3">
+                            <input asp-for="Tools" class="form-control" />
+                            <label asp-for="Tools">Technologies</label>
+                            <span asp-validation-for="Tools" class="text-danger"></span>
+                        </div>
                         <!--Link-->
                         <div class="form-floating pb-3">
                             <input asp-for="Link" class="form-control" />

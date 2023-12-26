@@ -147,11 +147,46 @@
         {
             <div class="col-sm-6">
                 <div class="project pt-5">
-                    <img src="@obj.ImageUrl" class="webImg" style="width:100%;height:300px;" />
+                    <a data-bs-toggle="modal" data-bs-target="#project-@(obj.Id)">
+                        <img src="@obj.ImageUrl" class="webImg" style="width:100%;height:300px;" />
+                    </a>
                     <!--Text under image-->
                     <div class="imgText">
                         <h5 class="fw-bolder">@obj.Name</h5>
                         <h4 class="fw-bold">@obj.Description</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!--Popup-->
+            <div class="modal fade" id="project-@(obj.Id)" table-index="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modelCenter">
+                    <div class="modal-content">
+                        <div class="card-body row pb-5">
+                            <div class="col-12 pb-3 d-flex justify-content-end">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Back <i class="bi bi-arrow-90deg-left"></i></button>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <img src="@obj.ImageUrl" class="w-100"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3 class="fw-bold">@obj.Description</h3>
+                                <p>@obj.Summary</p>
+
+                                <!--Project-->
+                                <div class="d-flex justify-content-between">
+                                    <p><span class="fw-bold">Project:</span> @obj.Description.Substring(0, obj.Description.IndexOf('-'))</p>
+                                    <p class="pe-5"><span class="fw-bold">Category:</span> @obj.Name</p>
+                                </div>
+
+                                <!--Technologies-->
+                                <p><span class="fw-bold">Technologies</span><br />
+                                 C#</p>
+
+                                 <a class="btn btn-primary" style="border-radius:15px" href="@obj.Link" target="_blank">Visit Project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

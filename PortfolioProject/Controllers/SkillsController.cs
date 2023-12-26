@@ -21,7 +21,8 @@ namespace PortfolioProject.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Skills> skills = _unitofwork.Skill.GetAll();
+            // Makes sure the newest obj is on the top
+            IEnumerable<Skills> skills = _unitofwork.Skill.GetAll().OrderByDescending(u=>u.Id);
             return View(skills);
         }
 
@@ -87,25 +88,26 @@ namespace PortfolioProject.Controllers
 
         public IActionResult Delete(Skills obj)
         {
-            Skills? skillToDelete = _unitofwork.Skill.Get(u => u.Id == obj.Id);
+            Skills? objToDelete = _unitofwork.Skill.Get(u => u.Id == obj.Id);
 
-            if(skillToDelete != null)
+            if (objToDelete != null)
             {
-                // Check for image
-                if (!string.IsNullOrEmpty(skillToDelete.ImageUrl))
+                if (!string.IsNullOrEmpty(objToDelete.ImageUrl))
                 {
-                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, skillToDelete.ImageUrl.TrimStart('\\'));
+                    // Get old image path 
+                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, objToDelete.ImageUrl.TrimStart('\\'));
 
+                    // Delete the image
                     if (System.IO.File.Exists(oldImagePath))
                     {
                         System.IO.File.Delete(oldImagePath);
                     }
                 }
 
-                _unitofwork.Skill.Remove(skillToDelete);
+                // Delete project
+                _unitofwork.Skill.Remove(objToDelete);
                 _unitofwork.Save();
             }
-
             return RedirectToAction(nameof(Index));
         }
     }

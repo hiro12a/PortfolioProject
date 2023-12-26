@@ -18,13 +18,15 @@ namespace PortfolioProject.Controllers
             _unitofwork = unitofwork;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string? id)
         {
             HomeVM home = new()
             {
                 Project = _unitofwork.Project.GetAll().ToList(),
                 Skill = _unitofwork.Skill.GetAll().ToList(),
             };
+
+            string view = "#" + id;
 
             return View(home);
         }

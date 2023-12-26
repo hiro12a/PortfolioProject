@@ -18,6 +18,12 @@ namespace PortfolioProject.Models
         [DisplayName("Website Link")]
         public string? Link { get; set; }
 
+        [Required]
+        public string? Tools { get; set; }
+
+        [Required]
+        public string? Summary { get; set; }
+
         // Images
         [NotMapped]
         public IFormFile? Image { get; set; }
