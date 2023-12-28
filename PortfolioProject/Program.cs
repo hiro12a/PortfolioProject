@@ -1,5 +1,6 @@
 using DataAccess.Repository;
 using DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject.Data;
 
@@ -11,6 +12,17 @@ builder.Services.AddControllersWithViews();
 // Connect to Database
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections")));
+
+// Add identity
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+// Override default paths 
+builder.Services.ConfigureApplicationCookie(option =>
+{
+    option.AccessDeniedPath = new PathString("/Account/AccessDenied");
+    option.LoginPath = new PathString("/Account/Login");
+});
 
 // Reference IUnitofWork
 builder.Services.AddScoped<IUnitofwork, UnitofWork>();

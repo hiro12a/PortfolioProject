@@ -1,10 +1,12 @@
 ﻿using DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioProject.Data;
 using PortfolioProject.Models;
 
 namespace PortfolioProject.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ProjectController : Controller
     {
         private readonly IUnitofwork _unitofwork;

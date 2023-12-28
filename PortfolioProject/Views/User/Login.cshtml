@@ -1,0 +1,40 @@
+﻿@model LoginVM
+
+<div class="container py-5">
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="card w-25">
+            <!--Header-->
+            <div class="card-header bg-gradient">
+                <h1 class="text-center">Login</h1>
+            </div>
+
+            <!--Body-->
+            <form method="post">
+                <div class="card-body">
+                    <!--Email-->
+                    <div class="form-floating pb-3">
+                        <input asp-for="Email" class="form-control" />
+                        <label asp-for="Email" class="ms-2"></label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <!--Password-->
+                    <div class="form-floating pb-3">
+                        <input asp-for="Password" class="form-control" />
+                        <label asp-for="Password" class="ms-2"></label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <button class="btn btn-primary text-center w-100 py-2" type="submit">Login</button>
+                    <div class="checkbox pt-3">
+                        <input class="form-check-input" />
+                        <label class="form-label">Remember Me</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
