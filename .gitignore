@@ -490,3 +490,4 @@ $RECYCLE.BIN/
 /Utility/EmailSender.cs
 /Utility/EmailSender.cs
 /PortfolioProject/appsettings.json
+/PortfolioProject/appsettings.Development.json
