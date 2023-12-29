@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioProject", "PortfolioProject\PortfolioProject.csproj", "{3B7BD822-951C-48E2-AA8C-83B8751F1A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioProject.Web", "PortfolioProject\PortfolioProject.Web.csproj", "{3B7BD822-951C-48E2-AA8C-83B8751F1A4A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{54FAAB11-8E01-481B-9116-A7F19B48E2B2}"
 EndProject
