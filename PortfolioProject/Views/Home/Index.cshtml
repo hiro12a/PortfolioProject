@@ -1,9 +1,9 @@
-﻿@model HomeVM
+﻿@using Microsoft.AspNetCore.Identity
+@model HomeVM
 
 @{
     ViewData["Title"] = "Home Page";
 }
-
 
 <div class="container py-5" id="home">
     <!--Front Page-->
@@ -46,7 +46,7 @@
 
                     <!--Contact me section-->
                     <div class="row pb-3">
-                        <form method="post">
+                        <form method="post" asp-action="SendEmail">
                             <div class="card">
                                 <div class="card-header bg-primary">
                                     <h3 class="text-white">Contact Me</h3>
@@ -54,18 +54,23 @@
                                 <div class="card-body">
                                     <!--Name-->
                                     <div class="form-floating pb-3">
-                                        <input class="form-control" />
+                                        <input data-val="true" class="form-control" id="name" name="name" />
                                         <label class="form-label text-muted ms-1">Name</label>
+                                        <span class="text-danger" data-valmsg-for="name" data-valmsg-replace="true"></span>
                                     </div>
+                                    <!--Email-->
                                     <div class="form-floating pb-3">
-                                        <input class="form-control" />
+                                        <input data-val="true" class="form-control" required id="email" name="email" aria-required="true" />
                                         <label class="form-label text-muted ms-1">Email</label>
+                                        <span class="text-danger" data-valmsg-for="email" data-valmsg-replace="true"></span>
                                     </div>
+                                    <!--Message-->
                                     <div class="form-floating pb-3">
-                                        <textarea type="text" class="form-control" style="height:150px"></textarea>
+                                        <textarea data-val="true" required  name="message" id="message" type="text" class="form-control" style="height:150px" aria-required="true"></textarea>
                                         <label class="form-label text-muted ms-1">Message</label>
+                                        <span class="text-danger" data-valmsg-for="message" data-valmsg-replace="true"></span>
                                     </div>
-                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -193,3 +198,6 @@
         }
     </div>
 </div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

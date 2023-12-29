@@ -10,13 +10,16 @@
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--Lets us use toastr API-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
 </head>
 <body class="bg-light">
     <header class="px-5 pt-2">
         <!--My Info-->
         <div class="d-flex">
             <div class="p-2">
-                <p><i class="bi bi-envelope-fill text-primary"></i> ythom87@gmail.com</p>
+                <a href="mailto:ythom87@gmail.com" class="text-decoration-none text-dark"><i class="bi bi-envelope-fill text-primary"></i> ythom87@gmail.com</a>
             </div>
             <div class="p-2">
                 <p><i class="bi bi-telephone-fill text-primary"></i><a href="tel:9804998059" class="text-decoration-none"> +1(980) 499-8059</a></p>
@@ -46,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="@Url.Action("Index","Home")#pshow"> Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("Index","Home")#me"> Contact Me</a>
                         </li>
                         
                         @if (User.IsInRole("Admin"))
@@ -79,9 +85,14 @@
     </header>
     <div>
         <main role="main" class="pb-3">
+            <partial name="_Notification" />
             @RenderBody()
         </main>
     </div>
+
+    <!--Lets us use toastr api-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,9 +1,7 @@
 using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using PortfolioProject.Models;
 using PortfolioProject.Models.VIewModel;
-using System.Diagnostics;
+using Utility;
 
 namespace PortfolioProject.Controllers
 {
@@ -11,11 +9,13 @@ namespace PortfolioProject.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IUnitofwork _unitofwork;
+        private readonly IEmailSender _emailSender;
 
-        public HomeController(ILogger<HomeController> logger, IUnitofwork unitofwork)
+        public HomeController(ILogger<HomeController> logger, IUnitofwork unitofwork, IEmailSender emailSender)
         {
             _logger = logger;
             _unitofwork = unitofwork;
+            _emailSender = emailSender;
         }
 
         public IActionResult Index(string? id)
@@ -26,14 +26,22 @@ namespace PortfolioProject.Controllers
                 Skill = _unitofwork.Skill.GetAll().ToList(),
             };
 
-            string view = "#" + id;
-
             return View(home);
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public async Task<IActionResult> SendEmail()
         {
-            return View();
+            var name = Request.Form["name"];
+            var email = Request.Form["email"];
+            var subject = "Job Scouting";
+            var messageBody = "Name: " + name + "\nEmail: " + email + "\nMessage: " + Request.Form["message"];
+            var to = "ythom87@gmail.com"; // Send the email to me 
+            
+            await _emailSender.SendEmailAsync(to, subject, messageBody);
+            TempData["success"] = "Email Sent Successfully";
+            return RedirectToAction("Index","Home");
         }
+
     }
 }

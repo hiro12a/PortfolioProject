@@ -3,6 +3,7 @@ using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject.Data;
+using Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,9 @@ builder.Services.ConfigureApplicationCookie(option =>
 
 // Reference IUnitofWork
 builder.Services.AddScoped<IUnitofwork, UnitofWork>();
+
+// Reference IEmailSender so we can send email
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 
