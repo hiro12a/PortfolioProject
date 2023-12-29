@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using Utility;
 
 namespace PortfolioProject.Controllers
 {
@@ -68,14 +69,14 @@ namespace PortfolioProject.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = SD.Role_Admin)]
         public IActionResult Register()
         {
             // If admin role doesn't exist, create the roles
-            if (!_roleManager.RoleExistsAsync("Admin").GetAwaiter().GetResult())
+            if (!_roleManager.RoleExistsAsync(SD.Role_Admin).GetAwaiter().GetResult())
             {
-                _roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
-                _roleManager.CreateAsync(new IdentityRole("User")).Wait();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).Wait();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_User)).Wait();
             }
 
             // To display value in dropdown for roles
@@ -117,7 +118,7 @@ namespace PortfolioProject.Controllers
                 else
                 {
                     // Since user did not select role, assign the role of user to them
-                    await _userManager.AddToRoleAsync(user, "User");
+                    await _userManager.AddToRoleAsync(user, SD.Role_User);
                 }
 
                 await _signInManager.SignInAsync(user, isPersistent: false);
