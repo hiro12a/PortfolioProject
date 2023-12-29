@@ -1,7 +1,7 @@
 using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioProject.Models.VIewModel;
-using Utility;
+using PortfolioProject.Utility;
 
 namespace PortfolioProject.Controllers
 {

@@ -3,7 +3,7 @@ using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PortfolioProject.Data;
-using Utility;
+using PortfolioProject.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
