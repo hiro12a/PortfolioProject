@@ -18,7 +18,7 @@ namespace PortfolioProject.Controllers
             _emailSender = emailSender;
         }
 
-        public IActionResult Index(string? id)
+        public IActionResult Index()
         {
             HomeVM home = new()
             {

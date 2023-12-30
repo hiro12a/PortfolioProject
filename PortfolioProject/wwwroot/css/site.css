@@ -76,3 +76,62 @@ body {
     transform: translateY(-50%) !important;
     width: 40%;
 }
+
+/*Carousel*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none; /*Hides the image by default*/
+}
+/*Previous and next button*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;    
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+}
+/*Position next button to the right*/
+.next{
+    right: 0;
+    border-radius:3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 30%;
+}
+/*The dots or indicators*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+/*Fading Animation*/
+.faade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 2}
+}
