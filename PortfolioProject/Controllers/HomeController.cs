@@ -22,8 +22,9 @@ namespace PortfolioProject.Controllers
         {
             HomeVM home = new()
             {
-                Project = _unitofwork.Project.GetAll().ToList(),
-                Skill = _unitofwork.Skill.GetAll().ToList(),
+                // Shows the lastest item first
+                Project = _unitofwork.Project.GetAll().ToList().OrderByDescending(u=>u.Id),
+                Skill = _unitofwork.Skill.GetAll().ToList().OrderByDescending(u=>u.Id),
             };
 
             return View(home);

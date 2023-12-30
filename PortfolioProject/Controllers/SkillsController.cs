@@ -106,7 +106,7 @@ namespace PortfolioProject.Controllers
                     }
                 }
 
-                // Delete project
+                // Delete Skill
                 _unitofwork.Skill.Remove(objToDelete);
                 _unitofwork.Save();
             }
