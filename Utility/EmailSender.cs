@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using SendGrid;
+using SendGrid.Helpers.Mail;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,22 +13,28 @@ namespace PortfolioProject.Utility
 {
     public class EmailSender : IEmailSender 
     {
+        public string emails { get; set; }
+        public string password { get; set; }
+    
+        public EmailSender(IConfiguration _config)
+        {
+            emails = _config["EmailSending:Email"];
+            password = _config["EmailSending:Password"];
+        }
+
         public Task SendEmailAsync(string email, string subject, string body)
         {
-            var mail = "thomtest965@gmail.com"; // Email that will be used to send 
-            var pw = "nvae fcwl qqob ofgw";
-
             var client = new SmtpClient("smtp.gmail.com", 587)
             {
                 EnableSsl = true,
-                Credentials = new NetworkCredential(mail, pw)
+                Credentials = new NetworkCredential(emails, password)
             };
 
             return client.SendMailAsync(
                 new MailMessage(
-                    from: mail,
+                    from: email,
                     to: email,
-                    subject, 
+                    subject,
                     body
                     ));
         }

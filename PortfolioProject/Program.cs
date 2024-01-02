@@ -14,6 +14,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections")));
 
+
+// Reference IEmailSender so we can send email
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+
+
 // Add identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
@@ -27,9 +32,6 @@ builder.Services.ConfigureApplicationCookie(option =>
 
 // Reference IUnitofWork
 builder.Services.AddScoped<IUnitofwork, UnitofWork>();
-
-// Reference IEmailSender so we can send email
-builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 
