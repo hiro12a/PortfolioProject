@@ -25,6 +25,9 @@ html {
     .project{
         text-align: left;
     }
+    .topHead{
+        font-size: 13px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
