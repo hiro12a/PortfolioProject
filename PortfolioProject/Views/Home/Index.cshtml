@@ -37,11 +37,10 @@
             <div class="col-sm-6">
                 <div class="pt-5">
                     <h1 class="fw-bold">ASP.NET Web Developer</h1>
-                    <p style="font-family:'Comic Sans MS'">
+                    <p>
                         Hello there, my name is Thom Y. I am a web developer and I&quot;m very passionate and dedicated to my work.
                         I enjoy taking on the challenges of building a web application and is
-                        currently looking for ASP.NET developer roles. If you like what you see, please feel free to contact me so that we can set up
-                        a time to have a meeting together.
+                        currently looking for ASP.NET developer roles. If you like what you see, please feel free to contact me
                     </p>
 
                     <!--Contact me section-->
@@ -104,7 +103,8 @@
     <div class="row">
         <div class="col-sm-6 pb-5">
             <h1 class="fw-bold regTitle" style="font-size:50px">My Certifications</h1>
-            <p style="font-family:'Comic Sans MS'" class="pb-2">No matter how difficult a task is, I will never let that stop me from trying to complete it.
+            <p class="pb-2">
+                No matter how difficult a task is, I will never let that stop me from trying to complete it.
                 <br /><br /> To the right is all the certifications I&quot;ve gotten so far. Moreover, I plan to continue learning and getting more certifcations. 
             </p>
 
@@ -121,14 +121,14 @@
                     @if(img.type == "Certification")
                     {
                         <div class="mySlides faade">
-                            <img src="@img.ImageUrl" style="width:100%" />
+                            <img src="@img.ImageUrl" style="width:100%"/>                   
                         </div>
                     }
                 }
 
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev start-0 translate-middle-y" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next end-0 translate-middle-y" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <!--For The dots/circles -->
             <div style="text-align:center">
@@ -157,8 +157,10 @@
                     </a>
                     <!--Text under image-->
                     <div class="imgText">
-                        <h5 class="fw-bolder">@obj.Name</h5>
-                        <h4 class="fw-bold">@obj.Description</h4>
+                        <a data-bs-toggle="modal" data-bs-target="#project-@(obj.Id)">
+                            <h5 class="fw-bolder">@obj.Name</h5>
+                            <h4 class="fw-bold">@obj.Description</h4>
+                        </a>
                     </div>
                 </div>
             </div>
