@@ -1,0 +1,157 @@
+html {
+  font-size: 14px;
+  font-family: Helvetica !important;
+}
+.body {
+  font-family: Helvetica !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  html{
+      text-align: center;
+  }
+  .title{
+      font-size: 30px !important;
+      padding: 20px !important;
+      text-align: center;
+  }
+  .myImg{
+      width: 50% !important;
+  }
+  .project{
+      text-align: left;
+  }
+  .topHead{
+      font-size: 13px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+position: relative;
+min-height: 100%;
+}
+
+body {
+margin-bottom: 60px;
+}
+
+/*Up Button*/
+#btnUp {
+  position: fixed;
+  bottom: 20px;
+  display: none;
+  right: 20px;
+  z-index: 1000;
+}
+/*HomePage*/
+.title{
+  font-family: Verdana;
+  font-size: 50px;
+  padding-top: 120px;
+}
+.regTitle{
+  font-family: Verdana;
+  font-size: 50px;
+}
+.myImg{
+  border-radius: 50%;
+  width: 100%;
+  mix-blend-mode: darken;
+}
+.project {
+  position: relative;
+  margin: 0 auto; /* Center it */
+}
+.webImg{
+  filter: brightness(80%);
+}
+.imgText {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 110%);
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.skillLogo{
+  width:5%;
+}
+.linkImg{
+  filter: brightness(20%);
+}
+
+
+/*Projects Page*/
+.modalCenter{
+  top: 40% !important;
+  transform: translateY(-50%) !important;
+  width: 40%;
+}
+
+/*Carousel*/
+.mySlides {
+  display: none; /*Hides the image by default*/
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/*Previous and next button*/
+.next, .prev {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  padding: 16px;
+  color: black;
+  position: absolute;
+  top: 50%;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  opacity: 30%;
+}
+/*The dots or indicators*/
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+.active, .dot:hover{
+  background-color: #717171;
+}
+/*Fading Animation*/
+.faade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 2}
+}

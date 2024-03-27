@@ -1,0 +1,67 @@
+﻿@model Skills
+
+<div class="container py-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <!--Check whether to use update or create by the id-->
+            <h1 class="py-2">@(Model.Id != 0? "Update" : "Create") Services</h1>
+        </div>
+
+        <div class="card-body">
+            <!--encrypt allows us to use upload files-->
+            <form method="post" enctype="multipart/form-data">
+                <input asp-for="Id" hidden /> <!--Need this so the script can check what the id is-->
+                <div class="row">
+                    <!--For Inputing information-->
+                    <div class="col-md-8">
+                        <!--Type-->
+                        <div class="form-floating pb-3">
+                            <select asp-for="type" asp-items="@ViewBag.Types" class="form-control w-25">
+                                <option disable select>Select Type</option>                               
+                            </select>
+                            <label asp-for="type" class="">Type</label>
+                        </div>
+                        <!--Name-->
+                        <div class="form-floating pb-3">
+                            <input asp-for="name" class="form-control" />
+                            <label asp-for="name">Name</label>
+                            <span asp-validation-for="name" class="text-danger"></span>
+                        </div>
+                        <!--Picture-->
+                        <div class="form-floating">
+                            <input asp-for="Pictures" class="form-control border-0"/>
+                            <input asp-for="ImageUrl" hidden /> <!--Needs this so that we can delete on update-->
+                        </div>
+                    </div>
+
+                    <!--For displaying Image-->
+                    <div class="col-sm-3">
+                        <img src="@Model.ImageUrl" class="w-100" />
+                    </div>
+                </div>
+
+                <!--For Submit and Back button-->
+                <div class="row d-flex">
+                    <div class="col-sm-6">
+                        <!--Submit-->
+                    @if (Model.Id != 0)
+                    {
+                            <button type="submit" class="btn btn-primary">Update</button>
+                    }
+                    else
+                    {
+                            <button type="submit" class="btn btn-primary">Create</button>
+                    }
+
+                        <!--Back Buttom-->
+                        <a class="btn btn-secondary" asp-controller="Skills" asp-action="Index">Back to List</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,290 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model HomeVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--Up Button-->
+<button type="button" id="btnUp" class="btn btn-danger btn-lg">
+    <i class="bi bi-arrow-up-circle"></i>
+</button>
+
+<div class="container py-5" id="home">
+    <!--Front Page-->
+    <div class="row flex-column-reverse flex-lg-row">
+        <!--Who I am-->
+        <div class="col-sm-6">
+            <h1 class="fw-bold title">Hello, I am <br />Thom Y <br /> Web Developer</h1>
+            <p>C#, ASP.NET Core, HTML, CSS, Javascript</p>
+            <a class="btn btn-primary align-middle py-2 fs-5" href="#me">Contact Me <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <!--My picture-->
+        <div class="col-sm-6">
+            <div>
+                <img src="../images/TSquare.jpg" class="myImg"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About Me-->
+<div class="bg-white" id="me">
+    <div class="px-5">
+        <div class="row">
+            <!--My picture-->
+            <div class="col-sm-6">
+                <div>
+                    <img src="../images/Thommy.jpg" style="width:100%;" />
+                </div>
+            </div>
+            <!--Who I am-->
+            <div class="col-sm-6">
+                <div class="pt-5">
+                    <h1 class="fw-bold">ASP.NET Web Developer</h1>
+                    <p>
+                        Hello there, my name is Thom Y. I am a web developer and I'm very passionate and dedicated to my work.
+                        I enjoy taking on the challenges of building a web application and is
+                        currently looking for ASP.NET developer roles. If you like what you see, please feel free to contact me
+                    </p>
+
+                    <!--Contact me section-->
+                    <div class="row pb-3">
+                        <form method="post" asp-action="SendEmail">
+                            <div class="card">
+                                <div class="card-header bg-primary">
+                                    <h3 class="text-white">Contact Me</h3>
+                                </div>
+                                <div class="card-body">
+                                    <!--Name-->
+                                    <div class="form-floating pb-3">
+                                        <input data-val="true" class="form-control" id="name" name="name" />
+                                        <label class="form-label text-muted ms-1">Name</label>
+                                        <span class="text-danger" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <!--Email-->
+                                    <div class="form-floating pb-3">
+                                        <input data-val="true" class="form-control" required id="email" name="email" aria-required="true" type="email"/>
+                                        <label class="form-label text-muted ms-1">Email</label>
+                                        <span class="text-danger" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <!--Message-->
+                                    <div class="form-floating pb-3">
+                                        <textarea data-val="true" required  name="message" id="message" type="text" class="form-control" style="height:150px" aria-required="true"></textarea>
+                                        <label class="form-label text-muted ms-1">Message</label>
+                                        <span class="text-danger" data-valmsg-for="message" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Skills-->
+<div class="container py-5">
+    <div class="row">
+        <h1 class="fw-bold text-center regTitle text-decoration-underline">My Skills & Tools</h1>
+        
+        <!--Icons of the skills-->
+        <div class="d-flex justify-content-around pt-5">
+            @foreach (var obj in Model.Skill)
+            {
+                @if(obj.type == "Skill")
+                {
+                    <img src="@obj.ImageUrl" class="skillLogo" />
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<!--Certifications-->
+<div class="container bg-white p-5" id="cert">
+    <div class="row">
+        <div class="col-sm-6 pb-5">
+            <h1 class="fw-bold regTitle" style="font-size:50px">My Certifications</h1>
+            <p class="pb-2">
+                No matter how difficult a task is, I will never let that stop me from trying to complete it.
+                <br /><br /> To the right is all the certifications I've gotten so far. Moreover, I plan to continue learning and getting more certifcations. 
+            </p>
+
+            <!--Resume Download-->
+            @foreach(var img in Model.Others)
+            {
+                @if(img.Name == "Resume")
+                {
+                    <a class="btn btn-primary mb-3 w-100" href="@img.File" download>Download Resume <i class="bi bi-cloud-arrow-down-fill"></i></a>
+                    <embed src="@img.File" type="application/pdf" width="100%" height="375">
+                }
+            }
+        </div>
+
+        <!--Certifications Image-->
+        <div class="col-sm-6">
+            <div class="slideshow-container">
+            <!--Display the images-->
+                @foreach(var img in Model.Skill)
+                {
+                    @if(img.type == "Certification")
+                    {
+                        <div class="mySlides faade">
+                            <img src="@img.ImageUrl" style="width:100%"/>                   
+                        </div>
+                    }
+                }
+
+                <!-- Next and previous buttons -->
+                <a class="prev start-0 translate-middle-y" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next end-0 translate-middle-y" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!--For The dots/circles -->
+            <div style="text-align:center">
+                @foreach (var img in Model.Skill)
+                {
+                    @if (img.type == "Certification")
+                    {
+                        <span class="dot" onclick="currentSlide(@img.Id)"></span>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+                        
+<!--Project Showcase-->
+<div class="container py-5" id="pshow">
+    <h1 class="fw-bold regTitle text-center" >Project Showcase</h1>
+    <div class="row">
+        @foreach (var obj in Model.Project)
+        {
+            <div class="col-sm-6">
+                <div class="project pt-5">
+                    <a data-bs-toggle="modal" data-bs-target="#project-@(obj.Id)">
+                        <img src="@obj.ImageUrl" class="webImg" style="width:100%;height:300px;" />
+                    </a>
+                    <!--Text under image-->
+                    <div class="imgText">
+                        <a data-bs-toggle="modal" data-bs-target="#project-@(obj.Id)">
+                            <h5 class="fw-bolder">@obj.Name</h5>
+                            <h4 class="fw-bold">@obj.Description</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Popup-->
+            <div class="modal fade" id="project-@(obj.Id)" table-index="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modelCenter">
+                    <div class="modal-content">
+                        <div class="card-body row pb-5">
+                            <div class="col-12 pb-3 d-flex justify-content-end">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Back <i class="bi bi-arrow-90deg-left"></i></button>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <img src="@obj.ImageUrl" class="w-100"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3 class="fw-bold">@obj.Description</h3>
+                                <p>@obj.Summary</p>
+
+                                <!--Project-->
+                                <div class="d-flex justify-content-between">
+                                    <p><span class="fw-bold">Project:</span> @obj.Description.Substring(0, obj.Description.IndexOf('-'))</p>
+                                    <p class="pe-5"><span class="fw-bold">Category:</span> @obj.Name</p>
+                                </div>
+
+                                <!--Technologies-->
+                                <p><span class="fw-bold">Technologies</span><br />
+                                 @obj.Tools</p>
+
+                                 <a class="btn btn-primary" style="border-radius:15px" href="@obj.Link" target="_blank">Visit Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+    <!--Slider-->
+    <script type="text/javascript">
+        let slideIndex = 1;
+
+        showSlides(slideIndex);
+        
+        // Goes to the next slide or previous one
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Get the current slide
+        function currentSlides(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Show slides
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides"); // Get the image
+            let dots = document.getElementsByClassName("dot"); // Get the dots
+
+            // Go back to the first image
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for(i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+    <!--Button Up-->
+    <script type="text/javascript">
+        let mybutton = document.getElementById("btnUp");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+}

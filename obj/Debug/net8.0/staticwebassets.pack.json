@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortfolioProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PortfolioProject.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\Access-Denied.png",
+      "PackagePath": "staticwebassets\\images\\Access-Denied.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\Portfolio.png",
+      "PackagePath": "staticwebassets\\images\\Portfolio.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\TSquare.jpg",
+      "PackagePath": "staticwebassets\\images\\TSquare.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\Thommy.jpg",
+      "PackagePath": "staticwebassets\\images\\Thommy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\others\\Thom Y Resume.pdf",
+      "PackagePath": "staticwebassets\\images\\others\\Thom Y Resume.pdf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\projects\\8c5bec0d-616e-4589-9dc0-a6568719f5a6.png",
+      "PackagePath": "staticwebassets\\images\\projects\\8c5bec0d-616e-4589-9dc0-a6568719f5a6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\projects\\9e7d1923-eec6-4efa-a0b7-e1ed686f2064.png",
+      "PackagePath": "staticwebassets\\images\\projects\\9e7d1923-eec6-4efa-a0b7-e1ed686f2064.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\projects\\9fe3741b-4aa7-4c38-85be-46f71309ad21.png",
+      "PackagePath": "staticwebassets\\images\\projects\\9fe3741b-4aa7-4c38-85be-46f71309ad21.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\0aec18e1-993e-42c9-adaf-600b594f2019.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\0aec18e1-993e-42c9-adaf-600b594f2019.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\25601fd9-6a88-4d90-aed5-98527b4f0bbb.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\25601fd9-6a88-4d90-aed5-98527b4f0bbb.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\397f9923-7f27-482d-bd54-751d18983a10.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\397f9923-7f27-482d-bd54-751d18983a10.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\43bc2740-d430-4841-bb33-88f4f909c175.jpeg",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\43bc2740-d430-4841-bb33-88f4f909c175.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\6512b795-74f2-45b6-92b7-3f9e02c1d3b9.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\6512b795-74f2-45b6-92b7-3f9e02c1d3b9.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\75d01cc4-2c36-4c4a-850c-78a9f543d48f.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\75d01cc4-2c36-4c4a-850c-78a9f543d48f.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\8c6d9436-32b2-4873-9d0f-e8ae3bcef6d0.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\8c6d9436-32b2-4873-9d0f-e8ae3bcef6d0.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\9318c99a-f237-4af1-8a24-a5b009eba37c.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\9318c99a-f237-4af1-8a24-a5b009eba37c.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\9f32b911-19e5-42ec-a885-5942e56f00f7.jpeg",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\9f32b911-19e5-42ec-a885-5942e56f00f7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\b465b461-f1b6-46ef-a6d1-d5824afe65b7.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\b465b461-f1b6-46ef-a6d1-d5824afe65b7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\dcb16dcb-3602-4fb5-a4e3-dfb4d9476cec.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\dcb16dcb-3602-4fb5-a4e3-dfb4d9476cec.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\df5df900-4fdd-411e-922f-0588df4e2eeb.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\df5df900-4fdd-411e-922f-0588df4e2eeb.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\f46b89d1-e981-4f4d-bfec-6981d67d5f93.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\f46b89d1-e981-4f4d-bfec-6981d67d5f93.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\f92391dc-e1d3-4b8f-9b92-11f28f10bf5f.png",
+      "PackagePath": "staticwebassets\\images\\skillCerts\\f92391dc-e1d3-4b8f-9b92-11f28f10bf5f.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PortfolioProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PortfolioProject.props",
+      "PackagePath": "build\\PortfolioProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PortfolioProject.props",
+      "PackagePath": "buildMultiTargeting\\PortfolioProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PortfolioProject.props",
+      "PackagePath": "buildTransitive\\PortfolioProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
