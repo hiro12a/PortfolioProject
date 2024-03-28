@@ -140,3 +140,4 @@ C:\Users\user\source\repos\PortfolioProject\obj\Debug\net8.0\PortfolioProject.pd
 C:\Users\user\source\repos\PortfolioProject\obj\Debug\net8.0\PortfolioProject.genruntimeconfig.cache
 C:\Users\user\source\repos\PortfolioProject\obj\Debug\net8.0\ref\PortfolioProject.dll
 C:\Users\user\source\repos\PortfolioProject\obj\Debug\net8.0\Portfoli.AF441466.Up2Date
+C:\Users\user\source\repos\PortfolioProject\obj\Debug\net8.0\PortfolioProject.sourcelink.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ILjlzb7B8J6n7JLVjNG4cRshJlcUPWe6YjTb8VPpGlE=",
+  "Hash": "1I/wzBD5xefzC5TFtBrmvKJjOnDtfYXBuPxhxZ0z57I=",
   "Source": "PortfolioProject",
   "BasePath": "_content/PortfolioProject",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\projects\\9fe3741b-4aa7-4c38-85be-46f71309ad21.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\projects\\a7deb7f1-1f27-4c39-b36f-4fc30732bd9e.png",
+      "SourceId": "PortfolioProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\",
+      "BasePath": "_content/PortfolioProject",
+      "RelativePath": "images/projects/a7deb7f1-1f27-4c39-b36f-4fc30732bd9e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\projects\\a7deb7f1-1f27-4c39-b36f-4fc30732bd9e.png"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\PortfolioProject\\wwwroot\\images\\skillCerts\\0aec18e1-993e-42c9-adaf-600b594f2019.png",
